@@ -104,3 +104,14 @@ We would like to thank the developers and maintainers of [Video-SwinUNet](https:
 This project is supported in part by the Shanghai Jiao Tong University Artificial Intelligence Institute.
 
 We also thank our collaborators and contributors for their valuable feedback and technical discussions.
+
+## 📌 Citation
+
+```bibtex
+@article{Zhou26VDFP,
+  title={{VDFP}: Video Deflickering with Flicker-banding Priors},
+  author={Zhiyi, Zhou and Libo, Zhu and Zihan, Zhou and Yulun, Zhang and Xiaokang, Yang},
+  journal={arXiv preprint arXiv:TBD},
+  year={2026}
+}
+```
