@@ -8,7 +8,7 @@
     <meta name="title" content="VDFP: Video Deflickering with Flicker-banding Priors">
     <meta name="description" content="VDFP reduces the flicker-banding in videos with good details.">
     <meta name="keywords" content="flicker-banding removal, machine learning, computer vision, video restoration, diffusion model">
-    <meta name="author" content="Zhiyi Zhou,Libo Zhu, Zihan Zhou, Yulun Zhang, and Xiaokang Yang">
+    <meta name="author" content="Zhiyi Zhou, Libo Zhu, Zihan Zhou, Yulun Zhang, and Xiaokang Yang">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     
@@ -25,7 +25,6 @@
     <meta property="article:author" content="Zhiyi Zhou">
     <meta property="article:section" content="Research">
     <meta property="article:tag" content="Video Deflickering">
-    <meta property="article:tag" content="Diffusion Model">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SJTU_AI">
@@ -33,7 +32,6 @@
     <meta name="twitter:title" content="VDFP: Video Deflickering with Flicker-banding Priors">
     <meta name="twitter:description" content="VDFP reduces the flicker-banding in videos with good details.">
     <meta name="twitter:image" content="https://ZhiyiZZhou.github.io/VDFP-Video-Deflickering-with-Flicker-banding-Priors/assets/figs/poster.jpg">
-    <meta name="twitter:image:alt" content="VDFP Research Preview">
 
     <meta name="citation_title" content="VDFP: Video Deflickering with Flicker-banding Priors">
     <meta name="citation_author" content="Zhou, Zhiyi">
@@ -45,19 +43,10 @@
     <meta name="citation_conference_title" content="arXiv preprint">
     <meta name="citation_pdf_url" content="TBD.pdf">
     
-    <meta name="theme-color" content="#2563eb">
-    <meta name="msapplication-TileColor" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gassets.com" crossorigin>
-    <link rel="preconnect" href="https://ajax.googleapis.com">
-    <link rel="preconnect" href="https://documentcloud.adobe.com">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="assets/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
@@ -67,17 +56,7 @@
     <link rel="preload" href="assets/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
-    <noscript>
-      <link rel="stylesheet" href="assets/css/bulma-carousel.min.css">
-      <link rel="stylesheet" href="assets/css/bulma-slider.min.css">
-      <link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    </noscript>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script defer src="assets/js/fontawesome.all.min.js"></script>
     <script defer src="assets/js/bulma-carousel.min.js"></script>
     <script defer src="assets/js/bulma-slider.min.js"></script>
@@ -90,182 +69,213 @@
       "headline": "VDFP: Video Deflickering with Flicker-banding Priors",
       "description": "VDFP reduces the flicker-banding in videos with good details.",
       "author": [
-        {
-          "@type": "Person",
-          "name": "Zhiyi Zhou",
-          "affiliation": {
-            "@type": "Organization",
-            "name": "Shanghai Jiao Tong University"
-          }
-        },
-        {
-          "@type": "Person",
-          "name": "Libo Zhu",
-          "affiliation": {
-            "@type": "Organization",
-            "name": "Shanghai Jiao Tong University"
-          }
-        },
-        {
-          "@type": "Person",
-          "name": "Zihan Zhou",
-          "affiliation": {
-            "@type": "Organization",
-            "name": "Shanghai Jiao Tong University"
-          }
-        },
-        {
-          "@type": "Person",
-          "name": "Yulun Zhang",
-          "affiliation": {
-            "@type": "Organization",
-            "name": "Shanghai Jiao Tong University"
-          }
-        },
-        {
-          "@type": "Person",
-          "name": "Xiaokang Yang",
-          "affiliation": {
-            "@type": "Organization",
-            "name": "Shanghai Jiao Tong University"
-          }
-        }
+        { "@type": "Person", "name": "Zhiyi Zhou", "affiliation": { "@type": "Organization", "name": "Shanghai Jiao Tong University" } },
+        { "@type": "Person", "name": "Libo Zhu", "affiliation": { "@type": "Organization", "name": "Shanghai Jiao Tong University" } },
+        { "@type": "Person", "name": "Zihan Zhou", "affiliation": { "@type": "Organization", "name": "Shanghai Jiao Tong University" } },
+        { "@type": "Person", "name": "Yulun Zhang", "affiliation": { "@type": "Organization", "name": "Shanghai Jiao Tong University" } },
+        { "@type": "Person", "name": "Xiaokang Yang", "affiliation": { "@type": "Organization", "name": "Shanghai Jiao Tong University" } }
       ],
       "datePublished": "2026",
-      "publisher": {
-        "@type": "Organization",
-        "name": "arXiv"
-      },
+      "publisher": { "@type": "Organization", "name": "arXiv" },
       "url": "https://github.com/ZhiyiZZhou/VDFP-Video-Deflickering-with-Flicker-banding-Priors",
-      "image": "https://ZhiyiZZhou.github.io/VDFP-Video-Deflickering-with-Flicker-banding-Priors/assets/figs/poster.jpg",
-      "keywords": ["flicker-banding removal", "video restoration", "diffusion model", "computer vision"],
-      "abstract": "Capturing digital screens with smartphones frequently induces severe banding due to hardware synchronization mismatches. Existing video restoration methods struggle with these structured, periodic luminance fluctuations, often resulting in residual artifacts or over-smoothed textures. We firstly construct DeViD, a real-world dataset in various scenes to deal with the lack of available datasets.Then we propose VDFP (Video Deflickering with Flicker-banding Priors), a novel perception-guided generation framework. First, we introduce a Degradation Field Modeling Based on Rolling Shutter Mechanism (DFM) capable of synthesizing complex multi-banding scenarios. Second, we present a spatial-temporal continuous prior perception (CPP). Unlike traditional binary segmentation, this module is optimized via a Flicker-Aware Mean Squared Error (FA-MSE) to capture the luminance transitions. By zero-initializing an augmented input layer, our model preserves pre-trained generative priors as well as spatial-temporal prior perception. Extensive experiments demonstrate that VDFP significantly outperforms other methods, eliminating complex banding with high-fidelity spatial details and temporal consistency.",
-      "citation": "@article{zhou26VDFP, title={{VDFP}: Video Deflickering with Flicker-banding Priors}, author={Zhiyi, Zhou and Libo, Zhu and Zihan, Zhou and Yulun, Zhang and Xiaokang, Yang}, journal={arXiv preprint arXiv:TBD}, year={2026}}",
-      "isAccessibleForFree": true,
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "mainEntity": {
-        "@type": "WebPage",
-        "@id": "https://ZhiyiZZhou.github.io/VDFP-Video-Deflickering-with-Flicker-banding-Priors"
-      }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Shanghai Jiao Tong University",
-      "url": "https://www.sjtu.edu.cn/",
-      "sameAs": [
-        "https://twitter.com/SJTU_AI",
-        "https://github.com/ZhiyiZZhou"
-      ]
+      "image": "https://ZhiyiZZhou.github.io/VDFP-Video-Deflickering-with-Flicker-banding-Priors/assets/figs/poster.jpg"
     }
     </script>
 
     <style>
-      /* 全局字体美化 */
       body {
-        font-family: 'Inter', sans-serif;
-        color: #1e293b;
-      }
-      
-      /* GIF 模块高级微调卡片 */
-      .gif-card {
-        background: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        padding: 10px;
-        transition: all 0.3s ease;
-        border: 1px solid #e2e8f0;
-      }
-      .gif-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      }
-      .gif-card img {
-        border-radius: 8px;
-        display: block;
+        font-family: 'Google Sans', 'Noto Sans', sans-serif;
+        background-color: #fafafa;
+        color: #2c3e50;
       }
 
-      /* 高级手风琴折叠面板 (Beautified Accordion) */
-      details.academic-details {
-        background: #f8fafc;
-        border-left: 4px solid #2563eb;
-        border-radius: 4px 8px 8px 4px;
-        margin-bottom: 1.25rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-        border-top: 1px solid #e2e8f0;
-        border-right: 1px solid #e2e8f0;
-        border-bottom: 1px solid #e2e8f0;
-        transition: background 0.2s ease;
+      /* 渐变高奢主标题 */
+      .publication-title {
+        font-weight: 800 !important;
+        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #6366f1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 0.5rem;
+        letter-spacing: -1px;
       }
-      details.academic-details:hover {
-        background: #f1f5f9;
+
+      /* 作者与机构微调 */
+      .publication-authors a {
+        color: #4a5568;
+        font-weight: 500;
+        transition: color 0.2s ease;
       }
-      details.academic-details summary {
-        padding: 1rem 1.25rem;
+      .publication-authors a:hover {
+        color: #2563eb;
+      }
+      .institution-block {
+        color: #718096;
+        font-size: 1.05rem;
+        margin-top: 0.5rem;
+      }
+
+      /* 高级扁平化学术纽扣 */
+      .link-block .button {
+        background-color: #1e293b !important;
+        border: none !important;
+        color: #ffffff !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+      }
+      .link-block .button:hover {
+        background-color: #2563eb !important;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+      }
+
+      /* 模块大标题美化 */
+      .section-title {
+        font-weight: 700 !important;
+        color: #0f172a;
+        position: relative;
+        margin-bottom: 2rem !important;
+      }
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 4px;
+        background: #2563eb;
+        margin: 0.75rem auto 0 auto;
+        border-radius: 2px;
+      }
+
+      /* 核心：大厂级别画廊网格卡片 (GIF Showcase) */
+      .gif-gallery-container {
+        background-color: #f1f5f9;
+        border-radius: 24px;
+        padding: 3rem 2rem !important;
+      }
+      .premium-gif-card {
+        background: #ffffff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .premium-gif-card:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
+      }
+      .premium-gif-card img {
+        display: block;
+        width: 100%;
+      }
+
+      /* 模块间距优化 */
+      .section.hero {
+        padding: 4rem 1.5rem 2rem 1.5rem;
+      }
+
+      /* 精致摘要卡片 */
+      .abstract-card {
+        background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        border-left: 5px solid #2563eb;
+        border-radius: 4px 16px 16px 4px;
+        padding: 2.5rem !important;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+        border-top: 1px solid #f1f5f9;
+        border-right: 1px solid #f1f5f9;
+        border-bottom: 1px solid #f1f5f9;
+      }
+
+      /* Poster 阴影优化 */
+      .poster-box img {
+        border-radius: 16px;
+        box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+      }
+
+      /* 高级学术折叠面板 */
+      details.academic-accordion {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01);
+        overflow: hidden;
+        transition: all 0.2s ease;
+      }
+      details.academic-accordion:hover {
+        border-color: #3b82f6;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.05);
+      }
+      details.academic-accordion summary {
+        padding: 1.25rem 1.5rem;
         font-weight: 600;
         cursor: pointer;
-        outline: none;
+        color: #1e293b;
+        background: #ffffff;
         user-select: none;
-        color: #1e3a8a;
-        list-style: none; /* 隐藏默认小箭头 */
         position: relative;
+        list-style: none;
       }
-      details.academic-details summary::-webkit-details-marker {
-        display: none; /* 兼容 Safari 隐藏箭头 */
-      }
-      details.academic-details summary::after {
-        content: '\f078'; /* FontAwesome 向下箭头 */
+      details.academic-accordion summary::-webkit-details-marker { display: none; }
+      details.academic-accordion summary::after {
+        content: '\f078';
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         position: absolute;
-        right: 1.25rem;
+        right: 1.5rem;
         top: 50%;
         transform: translateY(-50%);
-        transition: transform 0.3s ease;
-        font-size: 0.9rem;
-        color: #64748b;
+        transition: transform 0.2s ease;
+        color: #94a3b8;
       }
-      details.academic-details[open] summary::after {
-        transform: translateY(-50%) rotate(180deg); /* 展开时翻转 */
+      details.academic-accordion[open] summary::after {
+        transform: translateY(-50%) rotate(180deg);
+        color: #2563eb;
       }
-      details.academic-details .details-content {
-        padding: 0 1.25rem 1.5rem 1.25rem;
-        background: #ffffff;
-        border-radius: 0 0 7px 7px;
+      details.academic-accordion .accordion-content {
+        padding: 1.5rem;
+        background: #f8fafc;
         border-top: 1px solid #e2e8f0;
       }
 
-      /* Poster 图片圆角与阴影 */
-      section.poster img {
-        border-radius: 12px;
-        box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      /* 暗黑高奢 BibTeX 区块 */
+      .bibtex-wrapper {
+        background: #0f172a !important;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        padding: 1.5rem !important;
       }
-
-      /* 优化按钮样式 */
-      .publication-links .button {
+      .bibtex-wrapper code {
+        background: transparent !important;
+        color: #e2e8f0 !important;
+        font-family: 'Fira Code', 'Courier New', Courier, monospace;
+        font-size: 0.95rem;
+      }
+      .copy-bibtex-btn {
+        background-color: rgba(255,255,255,0.06) !important;
+        border: 1px solid rgba(255,255,255,0.1) !important;
+        color: #94a3b8 !important;
         transition: all 0.2s ease;
       }
-      .publication-links .button:hover {
-        transform: scale(1.05);
+      .copy-bibtex-btn:hover {
+        background-color: #2563eb !important;
+        color: #ffffff !important;
+        border-color: transparent !important;
       }
     </style>
   </head>
 
   <body>
-    <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-      <i class="fas fa-chevron-up"></i>
-    </button>
 
     <main id="main-content">
+      
       <section class="hero">
         <div class="hero-body">
           <div class="container is-max-desktop">
             <div class="columns is-centered">
               <div class="column has-text-centered">
                 <h1 class="title is-1 publication-title">VDFP: Video Deflickering with Flicker-banding Priors</h1>
+                
                 <div class="is-size-5 publication-authors">
                   <span class="author-block"><a href="https://github.com/ZhiyiZZhou" target="_blank">Zhiyi Zhou</a><sup>1*</sup>,</span>
                   <span class="author-block"><a href="https://github.com/libozhu03" target="_blank">Libo Zhu</a><sup>1*</sup>,</span>
@@ -274,99 +284,87 @@
                   <span class="author-block"><a href="#" target="_blank">Xiaokang Yang</a><sup>1</sup></span>
                 </div>
 
-                <div class="is-size-5 publication-authors">
-                  <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University<br>arXiv preprint 2026</span>
-                  <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                <div class="institution-block">
+                  <span><sup>1</sup>Shanghai Jiao Tong University</span>
+                  <br>
+                  <span class="tag is-link is-light mt-2" style="font-weight: 600;">arXiv preprint 2026</span>
+                  <p><small style="color: #94a3b8;"><sup>*</sup>Indicates Equal Contribution</small></p>
                 </div>
 
-                <div class="column has-text-centered">
+                <div class="column has-text-centered mt-4">
                   <div class="publication-links">
-                    <span class="link-block">
-                      <a href="TBD.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="link-block" style="margin: 0 6px;">
+                      <a href="TBD.pdf" target="_blank" class="button is-normal is-rounded">
                         <span class="icon"><i class="fas fa-file-pdf"></i></span>
                         <span>Paper</span>
                       </a>
                     </span>
-                    <span class="link-block">
-                      <a href="https://github.com/ZhiyiZZhou/VDFP-Video-Deflickering-with-Flicker-banding-Priors" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="link-block" style="margin: 0 6px;">
+                      <a href="https://github.com/ZhiyiZZhou/VDFP-Video-Deflickering-with-Flicker-banding-Priors" target="_blank" class="button is-normal is-rounded">
                         <span class="icon"><i class="fab fa-github"></i></span>
                         <span>Code</span>
                       </a>
                     </span>
-                    <span class="link-block">
-                      <a href="TBD" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="link-block" style="margin: 0 6px;">
+                      <a href="TBD" target="_blank" class="button is-normal is-rounded">
                         <span class="icon"><i class="ai ai-arxiv"></i></span>
                         <span>arXiv</span>
                       </a>
                     </span>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div style="margin-top: -2rem;"></div>
-
-      <section class="hero poster">
-        <div class="hero-body" style="padding-top: 1rem; padding-bottom: 1rem;">
-          <div class="container is-max-desktop has-text-centered">
-            <img src="assets/figs/poster.jpg" alt="Paper Poster" loading="lazy"/>
-          </div>
+      <section class="hero" style="padding-bottom: 3rem;">
+        <div class="container is-max-desktop has-text-centered poster-box">
+          <img src="assets/figs/poster.jpg" alt="Paper Poster" loading="lazy" style="width: 90%;"/>
         </div>
       </section>
 
-      <section class="section hero is-small is-light">
-        <div class="container is-max-desktop">
-          <h2 class="title is-3 has-text-centered mb-5">Video Deflickering Results</h2>
+      <section class="section">
+        <div class="container is-max-desktop gif-gallery-container">
+          <h2 class="title is-3 has-text-centered section-title">Video Deflickering Results</h2>
+          
           <div class="columns is-centered has-text-centered is-multiline">
               
               <div class="column is-one-third">
-                  <div class="gif-card">
-                      <figure class="image">
-                          <img width="100%" src="assets/figs/compared_LQ+our_003.gif" alt="Result 1">
-                      </figure>
+                  <div class="premium-gif-card">
+                      <img src="assets/figs/compared_LQ+our_003.gif" alt="Result 1">
                   </div>
               </div>
 
               <div class="column is-one-third">
-                  <div class="gif-card">
-                      <figure class="image">
-                          <img width="100%" src="assets/figs/compared_LQ+our_004.gif" alt="Result 2">
-                      </figure>
+                  <div class="premium-gif-card">
+                      <img src="assets/figs/compared_LQ+our_004.gif" alt="Result 2">
                   </div>
               </div>
 
               <div class="column is-one-third">
-                  <div class="gif-card">
-                      <figure class="image">
-                          <img width="100%" src="assets/figs/compared_LQ+our_009.gif" alt="Result 3">
-                      </figure>
+                  <div class="premium-gif-card">
+                      <img src="assets/figs/compared_LQ+our_009.gif" alt="Result 3">
                   </div>
               </div>
 
               <div class="column is-one-third">
-                  <div class="gif-card">
-                      <figure class="image">
-                          <img width="100%" src="assets/figs/compared_LQ+our_012.gif" alt="Result 4">
-                      </figure>
+                  <div class="premium-gif-card">
+                      <img src="assets/figs/compared_LQ+our_012.gif" alt="Result 4">
                   </div>
               </div>
 
               <div class="column is-one-third">
-                  <div class="gif-card">
-                      <figure class="image">
-                          <img width="100%" src="assets/figs/compared_LQ+our_015.gif" alt="Result 5">
-                      </figure>
+                  <div class="premium-gif-card">
+                      <img src="assets/figs/compared_LQ+our_015.gif" alt="Result 5">
                   </div>
               </div>
 
               <div class="column is-one-third">
-                  <div class="gif-card">
-                      <figure class="image">
-                          <img width="100%" src="assets/figs/compared_LQ+our_024.gif" alt="Result 6">
-                      </figure>
+                  <div class="premium-gif-card">
+                      <img src="assets/figs/compared_LQ+our_024.gif" alt="Result 6">
                   </div>
               </div>
 
@@ -374,126 +372,124 @@
         </div>
       </section>
 
-      <section class="section hero">
+      <section class="section">
         <div class="container is-max-desktop">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <h2 class="title is-3">Abstract</h2>
-              <div class="content has-text-justified">
-                <p>
-                  Capturing digital screens with smartphones frequently induces severe banding 
-                  due to hardware synchronization mismatches. Existing video restoration methods 
-                  struggle with these structured, periodic luminance fluctuations, often resulting 
-                  in residual artifacts or over-smoothed textures. We firstly construct DeViD, a 
-                  real-world dataset in various scenes to deal with the lack of available datasets.
-                  Then we propose VDFP (<b>V</b>ideo <b>D</b>eflickering with <b>F</b>licker-banding 
-                  <b>P</b>riors), a novel perception-guided generation framework. First, we 
-                  introduce a Degradation Field Modeling Based on Rolling Shutter Mechanism (DFM) 
-                  capable of synthesizing complex multi-banding scenarios. Second, we present a 
-                  spatial-temporal continuous prior perception (CPP). Unlike traditional binary 
-                  segmentation, this module is optimized via a Flicker-Aware Mean Squared Error 
-                  (FA-MSE) to capture the luminance transitions. By zero-initializing an augmented 
-                  input layer, our model preserves pre-trained generative priors as well as 
-                  spatial-temporal prior perception. Extensive experiments demonstrate that VDFP 
-                  significantly outperforms other methods, eliminating complex banding with 
-                  high-fidelity spatial details and temporal consistency.
-                </p>
+          <div class="columns is-centered">
+            <div class="column is-eleven-twelfths">
+              <div class="abstract-card">
+                <h2 class="title is-3 has-text-centered" style="color: #0f172a; font-weight: 700;">Abstract</h2>
+                <div class="content has-text-justified mt-4" style="line-height: 1.75; color: #334155; font-size: 1.05rem;">
+                  <p>
+                    Capturing digital screens with smartphones frequently induces severe banding 
+                    due to hardware synchronization mismatches. Existing video restoration methods 
+                    struggle with these structured, periodic luminance fluctuations, often resulting 
+                    in residual artifacts or over-smoothed textures. We firstly construct DeViD, a 
+                    real-world dataset in various scenes to deal with the lack of available datasets.
+                    Then we propose VDFP (<b>V</b>ideo <b>D</b>eflickering with <b>F</b>licker-banding 
+                    <b>P</b>riors), a novel perception-guided generation framework. First, we 
+                    introduce a Degradation Field Modeling Based on Rolling Shutter Mechanism (DFM) 
+                    capable of synthesizing complex multi-banding scenarios. Second, we present a 
+                    spatial-temporal continuous prior perception (CPP). Unlike traditional binary 
+                    segmentation, this module is optimized via a Flicker-Aware Mean Squared Error 
+                    (FA-MSE) to capture the luminance transitions. By zero-initializing an augmented 
+                    input layer, our model preserves pre-trained generative priors as well as 
+                    spatial-temporal prior perception. Extensive experiments demonstrate that VDFP 
+                    significantly outperforms other methods, eliminating complex banding with 
+                    high-fidelity spatial details and temporal consistency.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="hero is-small is-light">
-        <div class="hero-body">
-          <div class="container is-max-desktop">
-            <h2 class="title mb-4">Methods</h2>
-            <div id="results-carousel" class="carousel results-carousel">
-              <div class="item">
-                <img src="assets/figs/dataset.jpg" alt="Dataset" loading="lazy"/>
-                <h2 class="subtitle has-text-centered mt-2">
-                  Overview of the data acquisition and alignment of DeViD (left) and examples of some scenes contained in DeViD.
-                </h2>
-              </div>
-              <div class="item">
-                <img src="assets/figs/simulation_pipeline.png" alt="Simulation Pipeline" loading="lazy"/>
-                <h2 class="subtitle has-text-centered mt-2">
-                  Overview of our data simulation pipeline.
-                </h2>
-              </div>
-              <div class="item">
-                <img src="assets/figs/main_process.jpg" alt="Main process" loading="lazy"/>
-                <h2 class="subtitle has-text-centered mt-2">
-                  Overview of our model (VDFP).
-                </h2>
-              </div>
+      <section class="section" style="background-color: #f8fafc;">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered section-title">Methods</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item px-2">
+              <img src="assets/figs/dataset.jpg" alt="Dataset" loading="lazy" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);"/>
+              <h2 class="subtitle has-text-centered mt-3" style="font-size: 1rem; color: #64748b;">
+                Overview of the data acquisition and alignment of DeViD (left) and examples of some scenes contained in DeViD.
+              </h2>
+            </div>
+            <div class="item px-2">
+              <img src="assets/figs/simulation_pipeline.png" alt="Simulation Pipeline" loading="lazy" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);"/>
+              <h2 class="subtitle has-text-centered mt-3" style="font-size: 1rem; color: #64748b;">
+                Overview of our data simulation pipeline.
+              </h2>
+            </div>
+            <div class="item px-2">
+              <img src="assets/figs/main_process.jpg" alt="Main process" loading="lazy" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);"/>
+              <h2 class="subtitle has-text-centered mt-3" style="font-size: 1rem; color: #64748b;">
+                Overview of our model (VDFP).
+              </h2>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section hero is-small">
-        <div class="hero-body">
-          <div class="container is-max-desktop">
-            <div class="columns is-centered has-text-left">
-              <div class="column is-10">
-                <h2 class="title is-3 mb-5">Experimental Results</h2>
-                
-                <details class="academic-details">
-                  <summary>Quantitative Comparisons</summary>
-                  <div class="details-content">
-                    <p class="has-text-centered pt-4">
-                      <img src="assets/figs/table1.png" alt="Quantitative results" loading="lazy" style="border-radius: 4px;">
-                    </p>
-                  </div>
-                </details>
-                
-                <details class="academic-details">
-                  <summary>Visual Comparisons</summary>
-                  <div class="details-content">
-                    <p class="has-text-centered pt-4">
-                      <img src="assets/figs/figure9.png" alt="Visual results" loading="lazy" style="border-radius: 4px;">
-                    </p>
-                  </div>
-                </details>
+      <section class="section">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered section-title">Experimental Results</h2>
+          <div class="columns is-centered">
+            <div class="column is-11">
+              
+              <details class="academic-accordion">
+                <summary>Quantitative Comparisons (Table)</summary>
+                <div class="accordion-content">
+                  <p class="has-text-centered py-2">
+                    <img src="assets/figs/table1.png" alt="Quantitative results" loading="lazy" style="max-width: 100%;">
+                  </p>
+                </div>
+              </details>
+              
+              <details class="academic-accordion">
+                <summary>Visual Comparisons (Figures)</summary>
+                <div class="accordion-content">
+                  <p class="has-text-centered py-2">
+                    <img src="assets/figs/figure9.png" alt="Visual results" loading="lazy" style="max-width: 100%;">
+                  </p>
+                </div>
+              </details>
 
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section hero" id="BibTeX">
-        <div class="container is-max-desktop content">
-          <div class="bibtex-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-            <h2 class="title is-4 mb-0">BibTeX</h2>
-            <button class="copy-bibtex-btn button is-small is-light" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-              <span class="icon is-small"><i class="fas fa-copy"></i></span>
-              <span class="copy-text">Copy</span>
-            </button>
-          </div>
-          <pre id="bibtex-code" style="background-color: #1e293b; color: #f8fafc; border-radius: 8px; padding: 1.25rem;"><code style="color: inherit;">@article{zhou26VDFP,
+      <section class="section" id="BibTeX">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-11">
+              <div class="bibtex-wrapper">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                  <h2 class="title is-5 mb-0" style="color: #f8fafc; font-weight: 600;">BibTeX Citation</h2>
+                  <button class="button is-small copy-bibtex-btn" onclick="copyBibTeX()">
+                    <span class="icon is-small"><i class="fas fa-copy"></i></span>
+                    <span>Copy</span>
+                  </button>
+                </div>
+                <pre style="background: transparent; padding: 0;"><code style="padding: 0;">@article{zhou26VDFP,
   title={{VDFP}: Video Deflickering with Flicker-banding Priors},
   author={Zhiyi, Zhou and Libo, Zhu and Zihan, Zhou and Yulun, Zhang and Xiaokang, Yang},
   journal={arXiv preprint arXiv:TBD},
   year={2026}
 }</code></pre>
-        </div>
-      </section>
-
-      <footer class="footer" style="padding: 3rem 1.5rem 3rem;">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-8 has-text-centered">
-              <div class="content">
-                <p style="font-size: 0.9rem; color: #64748b;">
-                  This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-                  <br>
-                  This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-                </p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <footer class="footer" style="background-color: #fafafa; padding: 4rem 1.5rem 3rem 1.5rem; border-top: 1px solid #e2e8f0;">
+        <div class="container has-text-centered">
+          <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.6;">
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" style="color: #64748b; font-weight: 500;">Academic Project Page Template</a>.
+            <br>
+            Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: #64748b;">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
         </div>
       </footer>
 
