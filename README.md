@@ -1,6 +1,6 @@
 # VDFP: Video Deflickering with Flicker-banding Priors
 
-[Zhiyi Zhou](https://github.com/ZhiyiZZhou), [Libo Zhu](https://github.com/LiBoZhu030073), [Zihan Zhou](https://github.com/ZZH-qwq), [Yulun Zhang](http://yulunzhang.com/) and [Xiaokang Yang]()
+[Zhiyi Zhou](https://github.com/ZhiyiZZhou), [Libo Zhu](https://github.com/libozhu03), [Zihan Zhou](https://github.com/ZZH-qwq), [Yulun Zhang](http://yulunzhang.com/) and [Xiaokang Yang]()
 **"VDFP: Video Deflickering with Flicker-banding Priors", arxiv 2026**
 
 [![page](https://img.shields.io/badge/Project-Page-blue?logo=github)](TBD)
