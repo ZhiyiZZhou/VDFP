@@ -3,11 +3,11 @@
 [Zhiyi Zhou](https://github.com/ZhiyiZZhou), [Libo Zhu](https://github.com/libozhu03), [Zihan Zhou](https://github.com/ZZH-qwq), [Yulun Zhang](http://yulunzhang.com/) and [Xiaokang Yang]()
 **"VDFP: Video Deflickering with Flicker-banding Priors", arxiv 2026**
 
-[![page](https://img.shields.io/badge/Project-Page-blue?logo=github)](https://ZhiyiZZhou.github.io/VDFP-Video-Deflickering-with-Flicker-banding-Priors)
+[![page](https://img.shields.io/badge/Project-Page-blue?logo=github)](https://ZhiyiZZhou.github.io/VDFP)
 [![arXiv](https://img.shields.io/badge/Paper-arXiv-red?logo=arxiv)](TBD)
-[![visitors](https://visitor-badge.laobi.icu/badge?page_id=ZhiyiZZhou.VDFP-Video-Deflickering-with-Flicker-banding-Priors&right_color=violet)](https://github.com/ZhiyiZZhou/VDFP-Video-Deflickering-with-Flicker-banding-Priors)
-<!-- [![releases](https://img.shields.io/github/downloads/ZhiyiZZhou/VDFP-Video-Deflickering-with-Flicker-banding-Priors/total.svg)](https://github.com/ZhiyiZZhou/VDFP-Video-Deflickering-with-Flicker-banding-Priors/releases) -->
-<!-- [![GitHub Stars](https://img.shields.io/github/stars/ZhiyiZZhou/VDFP-Video-Deflickering-with-Flicker-banding-Priors?style=social)](https://github.com/ZhiyiZZhou/VDFP-Video-Deflickering-with-Flicker-banding-Priors) -->
+[![visitors](https://visitor-badge.laobi.icu/badge?page_id=ZhiyiZZhou.VDFP&right_color=violet)](https://github.com/ZhiyiZZhou/VDFP)
+<!-- [![releases](https://img.shields.io/github/downloads/ZhiyiZZhou/VDFP/total.svg)](https://github.com/ZhiyiZZhou/VDFP/releases) -->
+<!-- [![GitHub Stars](https://img.shields.io/github/stars/ZhiyiZZhou/VDFP?style=social)](https://github.com/ZhiyiZZhou/VDFP) -->
 
 
 <p align="center">
