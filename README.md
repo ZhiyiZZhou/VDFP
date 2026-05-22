@@ -4,7 +4,7 @@
 **"VDFP: Video Deflickering with Flicker-banding Priors", arxiv 2026**
 
 [![page](https://img.shields.io/badge/Project-Page-blue?logo=github)](https://ZhiyiZZhou.github.io/VDFP)
-[![arXiv](https://img.shields.io/badge/Paper-arXiv-red?logo=arxiv)](TBD)
+[![arXiv](https://img.shields.io/badge/Paper-arXiv-red?logo=arxiv)](https://arxiv.org/abs/2605.21079)
 [![visitors](https://visitor-badge.laobi.icu/badge?page_id=ZhiyiZZhou.VDFP&right_color=violet)](https://github.com/ZhiyiZZhou/VDFP)
 <!-- [![releases](https://img.shields.io/github/downloads/ZhiyiZZhou/VDFP/total.svg)](https://github.com/ZhiyiZZhou/VDFP/releases) -->
 <!-- [![GitHub Stars](https://img.shields.io/github/stars/ZhiyiZZhou/VDFP?style=social)](https://github.com/ZhiyiZZhou/VDFP) -->
