@@ -84,7 +84,7 @@ VDFP greatly outperformes other methods, which are trained on our simulated data
 <summary> 📊 Quantitative comparisons in Table 1 of the main paper (click to expand)</summary>
 
 <p align="center">
-  <img width="900" src="assets/figs/table1.png">
+  <img width="900" src="assets/figs/table1_renewed.png">
 </p>
 </details>
 
@@ -93,7 +93,7 @@ VDFP greatly outperformes other methods, which are trained on our simulated data
 </summary>
 
 <p align="center">
-  <img width="900" src="assets/figs/figure9.png">
+  <img width="900" src="assets/figs/figure9_renewed.png">
 </p>
 </details>
 
